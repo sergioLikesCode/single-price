@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: rgb(240, 240, 240);
+  height: 100vh;
+}
+
+
+li {
+  list-style: none;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.price-container {
+  border-radius: 10px;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.516);
+  width: 600px;
+  height: 450px;
+}
+
+@media (max-width: 600px) {
+  .price-container {
+    width: 70%;
+    height: 550px;
+  }
+  
+  .plan-container {
+    flex-direction: column;
+  }
+}
+
+.price-info {
+  background-color: white;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  padding: 30px;
+  height: 45%;
+}
+
+.price-info h1 {
+  color: hsl(179, 62%, 43%);
+  font-size: 22px;
+}
+
+.price-info #p1 {
+  color: hsl(71, 73%, 54%);
+  font-size: 16px;
+  font-weight: 500;
+  margin: 20px 0;
+}
+
+.price-info #p2 {
+  color: hsl(218, 22%, 67%);
+  font-size: 16px;
+  margin: 20px 0;
+}
+.plan-container {
+  display: flex;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  height: 55%;
+  background-color: hsl(179, 62%, 43%);
+}
+
+.subscription-box {
+  flex: 1;
+  color: white;
+  padding: 30px;
+}
+
+.whyus-box {
+  flex: 1;
+  padding: 30px;
+  background-color: rgb(24, 196, 190);
+}
+
+.subscription-box h2, .whyus-box h2{
+  font-size: 17px;
+  margin-bottom: 20px;
+  color: hsl(204, 43%, 93%);
+  letter-spacing: 1px;
+}
+
+.subscription-box #p1 {
+  color: hsl(204, 43%, 93%);
+  font-size: 27px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+#p1 span {
+  color: rgba(255, 255, 255, 0.377);
+  font-size: 14px;
+  margin-left: 10px;
+}
+
+.subscription-box #p2 {
+  font-size: 14px;
+  color: hsl(204, 43%, 93%);
+  margin-bottom: 20px;
+}
+
+.subscription-box .btn {
+  background-color: hsl(71, 73%, 54%);
+  outline: none;
+  border: 0px;
+  width: 100%;
+  height: 50px;
+  border-radius: 10px;
+  color: hsl(200, 33%, 95%);
+  font-size: 16px;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.24);
+  font-weight: bold;
+  cursor: pointer;
+}
+.subscription-box .btn:hover {
+  background-color: hsl(71, 47%, 60%);
+}
+
+.whyus-box li {
+  color: hsl(204, 43%, 93%);
+  font-size: 14px;
+}
+
+.whyus-box {
+  border-bottom-right-radius: 10px;
+}
